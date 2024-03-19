@@ -37,6 +37,8 @@ namespace shm_timer
             printf("shm_timer mmap failed!!!\n");
             return;
         }
+        //关闭文件描述符
+        close(fd);
     }
 
     void close()
